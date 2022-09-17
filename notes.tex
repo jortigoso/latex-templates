@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[a4paper]{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage{mathtools}
+\usepackage{wrapfig}  
+\usepackage[most]{tcolorbox}    
+
+\usepackage{tikz,lipsum,lmodern}
+% Used for flowcharts and diagrams
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+\tikzstyle{process} = [rectangle, minimum width=2cm, minimum height=1cm, text centered, draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+% Upload a font and change compiler to XeLaTeX
+\usepackage{fontspec} 
+
+% Margins
+\geometry{top=2 cm, bottom=1.7 cm, left=1.7cm, right=1.7cm}
+\setlength{\parindent}{0cm} %Indentation at paragraph start
+
+% Image folder path
+\graphicspath{ {imgs/} }
+
+% Header and footer
+% \pagestyle{fancy}
+% \fancyhf{}
+% \fancyhead[]{}
+% \rhead{Jorge Ortigoso Narro}
+% \lhead{Televisión digital}
+% \fancyfoot[R]{Jorge Ortigoso}
+
+%********************%
+%   Insert image     %
+%********************%
+% \begin{center}
+%     \includegraphics[scale=.4]{name}
+% \end{center} 
+
+%*****************************%
+% Various images in one shape %
+%*****************************%
+% \begin{figure}[h]
+%  \centering
+%   \subfloat{\includegraphics[scale=.25]{name}}
+%   \hspace{3em}%
+%   \subfloat{\includegraphics[scale=.25]{name}}
+% \end{figure}
+
+%********************************%
+%       Image between text       %
+%********************************%
+% \begin{wrapfigure}[lineheight]{position}{width}
+%   ...
+% \end{wrapfigure}
+
+%********************************%
+%       Flow diagram             %
+%********************************%
+% \begin{center}
+% \begin{tikzpicture}
+%     \node (p1) [process] {P1};
+%     \node (p2) [process, right =of p1] {P2};
+%     \node (p3) [process, right =of p2] {P3};
+    
+%     \draw [arrow] (p1) -- (p2);
+%     \draw [arrow] (p2) -- (p3);
+% \end{tikzpicture}
+% \end{center}
+
+\title{Title}
+\author{Author}
+\date{}
+
+\begin{document}
+% \setmainfont{[font.ttf]}
+\maketitle
+
+\section{Section}
+\end{document}
